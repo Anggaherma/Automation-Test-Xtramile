@@ -24,4 +24,3 @@
 ## Running Tests
 
 - To run all tests using Nunit Test Runner, here the documentation https://docs.nunit.org/2.6.2/runningTests.html
-![TestResult](TestResult.png)
