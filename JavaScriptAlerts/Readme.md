@@ -14,7 +14,7 @@
 - Selenium WebDriver
 - C# language
 
-## Setup
+## Setupk
 
 1. Clone the repository.
 2. Open the solution in Visual Studio.
