@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<WarningLevel>0</WarningLevel>
+		<NoWarn>CS0618</NoWarn>
+		<TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<WarningLevel>0</WarningLevel>
+		<NoWarn>CS0618</NoWarn>
+		<TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="TestCases\AddNewComputer.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="Pages\JavaScriptAlert.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="DotNetSeleniumExtras.PageObjects" Version="3.11.0" />
+		<PackageReference Include="DotNetSeleniumExtras.PageObjects.Core" Version="4.14.1" />
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0" />
+		<PackageReference Include="NUnit" Version="4.1.0" />
+		<PackageReference Include="NUnit.ConsoleRunner" Version="3.17.0" />
+		<PackageReference Include="NUnit3TestAdapter" Version="4.5.0" />
+		<PackageReference Include="Selenium.WebDriver" Version="4.20.0" />
+		<PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="124.0.6367.20700" />
+		<PackageReference Include="xunit.extensibility.core" Version="2.8.0" />
+	</ItemGroup>
+
+</Project>
